@@ -1,0 +1,15 @@
+/* UserCard.css */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-button {
+    flex-grow: 1;
+    margin-right: 10px; /* Jarak antara tombol Edit dan Delete */
+  }
+  
+  .delete-button {
+    white-space: nowrap;
+  }
+  
