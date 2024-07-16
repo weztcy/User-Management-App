@@ -1,12 +1,11 @@
-// actions.js
-export const SET_USERS = 'SET_USERS';
-export const ADD_USER = 'ADD_USER';
-export const DELETE_USER = 'DELETE_USER';
-export const EDIT_USER = 'EDIT_USER'; // Tambahkan konstanta EDIT_USER
+export const SET_USERS = "SET_USERS";
+export const ADD_USER = "ADD_USER";
+export const DELETE_USER = "DELETE_USER";
+export const EDIT_USER = "EDIT_USER";
 
 export const setUsers = (users) => ({
   type: SET_USERS,
-  payload: users
+  payload: users,
 });
 
 export const addUser = (user) => ({
@@ -19,7 +18,7 @@ export const deleteUser = (userId) => ({
   payload: userId,
 });
 
-export const editUser = (user) => ({ // Tambahkan fungsi editUser
+export const editUser = (user) => ({
   type: EDIT_USER,
   payload: user,
 });

@@ -27,13 +27,10 @@ const AddUserForm = () => {
       website,
     };
 
-    // Update context
     setUsers([...users, newUser]);
 
-    // Update Redux store
     dispatch(addUser(newUser));
 
-    // Reset form fields
     setName("");
     setEmail("");
     setCity("");

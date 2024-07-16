@@ -1,5 +1,4 @@
-// reducers.js
-import { SET_USERS, ADD_USER, DELETE_USER, EDIT_USER } from './actions';
+import { SET_USERS, ADD_USER, DELETE_USER, EDIT_USER } from "./actions";
 
 const initialState = {
   users: [],
@@ -20,12 +19,12 @@ const rootReducer = (state = initialState, action) => {
     case DELETE_USER:
       return {
         ...state,
-        users: state.users.filter(user => user.id !== action.payload),
+        users: state.users.filter((user) => user.id !== action.payload),
       };
-    case EDIT_USER: // Tambahkan case untuk EDIT_USER
+    case EDIT_USER:
       return {
         ...state,
-        users: state.users.map(user =>
+        users: state.users.map((user) =>
           user.id === action.payload.id ? { ...user, ...action.payload } : user
         ),
       };

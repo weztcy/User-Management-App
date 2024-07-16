@@ -21,10 +21,6 @@ const Home = () => {
               imageSrc={mhsPhoto}
               style={{ margin: "auto" }}
             />
-            {/* <Button variant="primary" className="me-2">
-              Get Started
-            </Button>
-            <Button variant="outline-secondary">Learn More</Button> */}
           </Col>
           <Col md={6} className="mt-4 mt-md-0">
             <Card>
@@ -44,8 +40,6 @@ const Home = () => {
                 </Card.Text>
                 <br />
                 <div className="text-end">
-                  {" "}
-                  {/* Menggunakan class 'text-end' di sini */}
                   <Button
                     as={Link}
                     to="/users"
